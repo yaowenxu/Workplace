@@ -1,4 +1,4 @@
-package xrpc
+package xrpc_pkg
 
 import (
 	"fmt"

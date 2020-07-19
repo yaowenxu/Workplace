@@ -1,4 +1,4 @@
-package learn
+package learn_pkg
 
 import (
 	"errors"

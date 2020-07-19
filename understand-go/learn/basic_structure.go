@@ -4,9 +4,10 @@ package main
 
 // 导入其他包
 import (
+	"./learn_pkg"
 	"fmt"
 )
-import "./learn"
+
 //import (
 //	"math"
 //	"io"
@@ -41,13 +42,13 @@ func main(){
 	ptr = nil
 	fmt.Println(va, vb) // 进行输出值
 	fmt.Println("基础语法学习")
-	learn.Print()
-	learn.Print_Array()
+	learn_pkg.Print()
+	learn_pkg.Print_Array()
 	fmt.Println("指针地址为：", &va)
 	fmt.Printf("数值 %x\n", ptr)
-	learn.Print_Struct()
-	learn.Slice()
-	var VPersiona learn.Person
+	learn_pkg.Print_Struct()
+	learn_pkg.Slice()
+	var VPersiona learn_pkg.Person
 	fmt.Println("OK")
 	VPersiona.Vmap() // 调用结构体私有函数
 	for i := 0; i < 10; i++{
@@ -58,6 +59,6 @@ func main(){
 	var vfload float32 = 1.0
 	vfload = float32(vsum)
 	fmt.Println(vfload)
-	learn.Print_Interface()
-	learn.Print_Goroutine()
+	learn_pkg.Print_Interface()
+	learn_pkg.Print_Goroutine()
 }

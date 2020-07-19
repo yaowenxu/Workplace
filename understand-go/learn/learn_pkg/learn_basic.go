@@ -1,4 +1,4 @@
-package learn
+package learn_pkg
 // 学习go语言包组织功能
 
 import "fmt"
