@@ -1,13 +1,14 @@
 package main
 
 import (
+	pb "./pb_pkg"
 	"fmt"
 	"github.com/golang/protobuf/proto"
 	"log"
 )
 
 func main() {
-	test := &Student{
+	test := &pb.Student{
 		Name: "yaowenxu",
 		Male:  true,
 		Scores: []int32{98, 97, 96},
@@ -16,7 +17,7 @@ func main() {
 	if err != nil {
 		log.Fatal("marshaling error: ", err)
 	}
-	newTest := &Student{}
+	newTest := &pb.Student{}
 	err = proto.Unmarshal(data, newTest)
 	if err != nil {
 		log.Fatal("unmarshaling error: ", err)

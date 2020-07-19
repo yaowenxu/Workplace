@@ -4,7 +4,7 @@
 // 	protoc        v3.11.2
 // source: student.proto
 
-package main
+package pb_pkg
 
 import (
 	proto "github.com/golang/protobuf/proto"

@@ -2,7 +2,7 @@ syntax = "proto3";
 //package main;
 
 option go_package = "main";
-// protoc --go_out=.. *.proto
+// protoc --go_out=. *.proto
 
 // this is a comment
 message Student {
