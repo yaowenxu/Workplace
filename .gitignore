@@ -2,3 +2,4 @@
 # 去除 .vscode 文件夹的提交
 /.vscode
 understand-go/.idea
+understand-cache/.idea
