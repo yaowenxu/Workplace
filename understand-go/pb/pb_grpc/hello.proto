@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package pb_grpc;
+
+// 生成代码： protoc --go_out=plugins=grpc:. hello.proto
+message String {
+  string value = 1;
+}
+
+service HelloService {
+  rpc Hello (String) returns (String);
+  // 支持双向流
+  rpc Channel (stream String) returns (stream String);
+}

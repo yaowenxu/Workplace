@@ -1,7 +1,7 @@
 package main
 
 import (
-	"./xrpc_pkg"
+	"main/xrpc_pkg"
 	"fmt"
 	"time"
 )

@@ -4,8 +4,8 @@ package main
 
 // 导入其他包
 import (
-	"./learn_pkg"
 	"fmt"
+	"main/learn_pkg"
 )
 
 //import (

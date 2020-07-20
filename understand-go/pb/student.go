@@ -1,12 +1,13 @@
 package main
 
 import (
-	pb "./pb_pkg"
 	"fmt"
 	"github.com/golang/protobuf/proto"
 	"log"
+	pb "main/pb_pkg"
 )
 
+// 进行编码和解码实践
 func main() {
 	test := &pb.Student{
 		Name: "yaowenxu",

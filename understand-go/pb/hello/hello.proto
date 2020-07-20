@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+package hello;
+
+// 生成命令： protoc --go_out=. hello.proto
+message String {
+  string value = 1;
+}
