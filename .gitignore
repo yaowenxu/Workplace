@@ -1,5 +1,6 @@
 # 2019年08月17日16:13:16
 # 去除 .vscode 文件夹的提交
-/.vscode
+.vscode
 understand-go/.idea
 understand-cache/.idea
+.DS_Store
