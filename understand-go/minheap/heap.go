@@ -1,6 +1,11 @@
 package main
 
-import "fmt"
+import (
+	"container/heap"
+	"fmt"
+	"math/rand"
+	"time"
+)
 
 type heapNode struct {
 	Imgidx int64 // imgidx
@@ -33,5 +38,26 @@ func (h *indexheap) Pop() interface{} {
 }
 
 func main() {
-	fmt.Println("ok!")
+	fmt.Println("输入:")
+	img2ipt := make(map[int64]float64)
+	mainheap := &indexheap{Imgidx2importance: &img2ipt}
+	heap.Init(mainheap)
+	rand.Seed(time.Now().UnixNano())
+	for i := 0; i < 10; i++ {
+		// fmt.Println(rand.Float64())
+		imgidx := int64(rand.Intn(20))
+		_, exist := img2ipt[imgidx]
+		if !exist {
+			ipt := rand.Float64()
+			hn := heapNode{Imgidx: imgidx}
+			fmt.Println(hn, ipt)
+			img2ipt[imgidx] = ipt
+			heap.Push(mainheap, hn)
+		}
+	}
+	fmt.Println("输出:")
+	for mainheap.Len() > 0 {
+		hn := heap.Pop(mainheap)
+		fmt.Println(hn, img2ipt[hn.(heapNode).Imgidx])
+	}
 }
