@@ -5,3 +5,6 @@ understand-go/.idea
 understand-cache/.idea
 .DS_Store
 .venv
+# rust-lang
+target/
+*.lock
