@@ -4,3 +4,6 @@
 
 ## 常用编译命令
 - cargo new -vcs none hello_cargo
+
+## 学习进度
+- [7.1 - Package, Crate, Module](https://www.bilibili.com/video/BV1hp4y1k7SV?p=27&spm_id_from=pageDriver)
