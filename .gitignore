@@ -5,6 +5,12 @@ understand-go/.idea
 understand-cache/.idea
 .DS_Store
 .venv
+
 # rust-lang
 target/
 *.lock
+
+# 2022年12月01日12:28:42
+# pytorch 
+understand-torch/data
+.ipynb_checkpoints
